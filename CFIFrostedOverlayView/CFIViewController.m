@@ -17,7 +17,7 @@
 @end
 
 @implementation CFIViewController {
-	float oldX, oldY, delta;
+	float oldY, delta;
 	BOOL allowPanning;
 }
 
@@ -30,6 +30,7 @@
 	
 	self.controlCenter = [[CFIControlCenterView alloc]initWithFrame:CGRectOffset(CGRectInset(self.view.bounds, 0, 10), 0, CGRectGetHeight(self.view.bounds))];
 	self.controlCenter.offset = 20.f;
+	self.controlCenter.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 	[self.view addSubview:self.controlCenter];
 	self.controlCenter.viewToBlur = self.view;
 }

@@ -19,6 +19,7 @@
 }
 - (id<CAAction>)actionForLayer:(CALayer *)layer forKey:(NSString *)event { return (id)NSNull.null; }
 - (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx {
+	if (ctx == NULL) return;
 	if (self.drawRect != NULL) self.drawRect(_layer, ctx);
 }
 @end
@@ -72,11 +73,11 @@
 - (void)setViewToBlur:(UIView *)viewToBlur {
 	_viewToBlur = viewToBlur;
 	__weak __typeof(self) weakSelf = self;
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
 		__strong __typeof(self) self = weakSelf;
         GPUImageGaussianBlurFilter *filter = [[GPUImageGaussianBlurFilter alloc] init];
-        filter.blurSize = [UIScreen mainScreen].scale * 9;
-		UIImage *image = [self imageFromView:(self.viewToBlur)];
+        filter.blurSize = UIScreen.mainScreen.scale * 9;
+		UIImage *image = CFIImageFromView(self.viewToBlur);
 		self.blurredLayer.contents = (id)[filter imageByFilteringImage:image].CGImage;
     });
 }
@@ -88,14 +89,18 @@
 	self.tintLayer.frame = self.bounds;
 }
 
-- (UIImage *)imageFromView:(UIView *)view {
+- (void)drawRect:(CGRect)rect {
+	[super drawRect:rect];
+}
+
+static UIImage *CFIImageFromView(UIView *view) {
 	CGSize size = view.bounds.size;
     
     CGFloat scale = UIScreen.mainScreen.scale;
     size.width *= scale;
     size.height *= scale;
     
-    UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
+    UIGraphicsBeginImageContextWithOptions(size, NO, UIScreen.mainScreen.scale);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGContextScaleCTM(ctx, scale, scale);
 	

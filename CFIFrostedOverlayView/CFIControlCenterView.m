@@ -69,7 +69,7 @@
 	_tintLayerDelegate.drawRect = ^(CALayer *layer, CGContextRef currentContext) {
 		@strongify(self);
 		CGRect b = self.bounds;
-		[UIColor.blackColor setStroke];
+		CGContextSetStrokeColor(currentContext, (CGFloat[4]){ 0.f, 0.f, 0.f, 1.f });
 		CGContextSetLineWidth(currentContext, 2.f);
 		CGContextMoveToPoint(currentContext, 0, 94);
 		CGContextAddLineToPoint(currentContext, CGRectGetWidth(b), 94);
