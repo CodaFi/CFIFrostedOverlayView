@@ -17,6 +17,6 @@ Because of the way that this control renders its superview, you must provide it 
 	self.controlCenter.viewToBlur = self.view;
 ```
 
-The inset of the control's from and its contentOffset must match exactly, else the rendered view will be mis-aligned with the actual view.
+The inset of the control's frame and its `contentOffset` must match exactly, else the rendered view will be mis-aligned with the actual view.
 
 
