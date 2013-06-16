@@ -9,7 +9,6 @@
 #import "CFIFrostedOverlayView.h"
 #import <QuartzCore/QuartzCore.h>
 #import <GPUImage.h>
-#import "EXTScope.h"
 
 @implementation CFILayerDelegate
 -(id) initWithLayer:(CALayer *)view {
@@ -29,9 +28,7 @@
 @property (nonatomic, strong) CALayer *blurredLayer;
 @end
 
-@implementation CFIFrostedOverlayView {
-	BOOL doneInitializing;
-}
+@implementation CFIFrostedOverlayView
 
 - (id)init {
 	return [self initWithFrame:CGRectZero];
@@ -73,11 +70,10 @@
 }
 
 - (void)setViewToBlur:(UIView *)viewToBlur {
-	doneInitializing = YES;
 	_viewToBlur = viewToBlur;
-	@weakify(self);
+	__weak __typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-		@strongify(self);
+		__strong __typeof(self) self = weakSelf;
         GPUImageGaussianBlurFilter *filter = [[GPUImageGaussianBlurFilter alloc] init];
         filter.blurSize = [UIScreen mainScreen].scale * 9;
 		UIImage *image = [self imageFromView:(self.viewToBlur)];
