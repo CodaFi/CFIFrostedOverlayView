@@ -8,7 +8,7 @@ A view that renders its superview with a gaussian blur like iOS 7's Control Cent
 Caveats
 =======
 
-Because of the way that this control renders its superview, you must provide it an offset if you choose to not have the control take up the entirety of its superview.  For example, the demo project shows how to offset the control by 20 pixels from the top of the screen.
+Because of the way that this control renders its superview, you must provide it an offset if you choose to not have the control take up the entirety of its superview, and guarantee that it is not onscreen when its superview is being rendered.  For example, the demo project shows how to offset the control by 20 pixels from the top of the screen.
 
 ```ObjC
   self.controlCenter = //...
@@ -18,5 +18,3 @@ Because of the way that this control renders its superview, you must provide it 
 ```
 
 The inset of the control's frame and its `contentOffset` must match exactly, else the rendered view will be mis-aligned with the actual view.
-
-
