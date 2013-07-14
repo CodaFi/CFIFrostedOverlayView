@@ -19,13 +19,16 @@
 		8442BCDE176E375A00F27E4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442BCC0176E375A00F27E4D /* UIKit.framework */; };
 		8442BCE6176E375A00F27E4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8442BCE4176E375A00F27E4D /* InfoPlist.strings */; };
 		8442BCE8176E375A00F27E4D /* CFIFrostedOverlayViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8442BCE7176E375A00F27E4D /* CFIFrostedOverlayViewTests.m */; };
-		8442BD0C176E3A7200F27E4D /* Wallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 8442BD0B176E3A7200F27E4D /* Wallpaper.png */; };
 		8442BD0F176E3EEB00F27E4D /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 8442BD0E176E3EEB00F27E4D /* EXTScope.m */; };
+		84E606BC17931BB500194C76 /* CFIFrostedOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E606BB17931BB500194C76 /* CFIFrostedOverlayView.m */; };
+		84E606D31793349F00194C76 /* Wallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E606D21793349F00194C76 /* Wallpaper.png */; };
+		84E606DD179335B600194C76 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E606DA179335B600194C76 /* Default-568h@2x.png */; };
+		84E606DE179335B600194C76 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E606DB179335B600194C76 /* Default.png */; };
+		84E606DF179335B600194C76 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E606DC179335B600194C76 /* Default@2x.png */; };
 		84EECF65176E4E5E00AA826F /* CFIControlCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EECF64176E4E5E00AA826F /* CFIControlCenterView.m */; };
 		84EECF6A176E541500AA826F /* CFIControlCenterSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EECF69176E540C00AA826F /* CFIControlCenterSquareButton.m */; };
 		84EECF76176E5C4B00AA826F /* CFIControlCenterCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EECF75176E5C4B00AA826F /* CFIControlCenterCircleButton.m */; };
 		84EECF84176E6E9500AA826F /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EECF7F176E6E8200AA826F /* libGPUImage.a */; };
-		84EECF8A176E6FAA00AA826F /* CFIFrostedOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EECF89176E6FAA00AA826F /* CFIFrostedOverlayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,10 +80,15 @@
 		8442BCE3176E375A00F27E4D /* CFIFrostedOverlayViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CFIFrostedOverlayViewTests-Info.plist"; sourceTree = "<group>"; };
 		8442BCE5176E375A00F27E4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8442BCE7176E375A00F27E4D /* CFIFrostedOverlayViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFIFrostedOverlayViewTests.m; sourceTree = "<group>"; };
-		8442BD0B176E3A7200F27E4D /* Wallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wallpaper.png; sourceTree = "<group>"; };
 		8442BD0D176E3EEB00F27E4D /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		8442BD0E176E3EEB00F27E4D /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
 		8442BD10176E3EF400F27E4D /* metamacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		84E606BA17931BB500194C76 /* CFIFrostedOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFIFrostedOverlayView.h; path = ../../CFIFrostedOverlayView.h; sourceTree = "<group>"; };
+		84E606BB17931BB500194C76 /* CFIFrostedOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFIFrostedOverlayView.m; path = ../../CFIFrostedOverlayView.m; sourceTree = "<group>"; };
+		84E606D21793349F00194C76 /* Wallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wallpaper.png; path = ../../Artwork/Wallpaper.png; sourceTree = "<group>"; };
+		84E606DA179335B600194C76 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../../GitPad/External/KrakenKit/build-mac/External/AFNetworking/Example/Default-568h@2x.png"; sourceTree = "<group>"; };
+		84E606DB179335B600194C76 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "../../../GitPad/External/KrakenKit/build-mac/External/AFNetworking/Example/Default.png"; sourceTree = "<group>"; };
+		84E606DC179335B600194C76 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../../GitPad/External/KrakenKit/build-mac/External/AFNetworking/Example/Default@2x.png"; sourceTree = "<group>"; };
 		84EECF63176E4E5E00AA826F /* CFIControlCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIControlCenterView.h; sourceTree = "<group>"; };
 		84EECF64176E4E5E00AA826F /* CFIControlCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIControlCenterView.m; sourceTree = "<group>"; };
 		84EECF68176E540C00AA826F /* CFIControlCenterSquareButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFIControlCenterSquareButton.h; sourceTree = "<group>"; };
@@ -88,8 +96,6 @@
 		84EECF74176E5C4B00AA826F /* CFIControlCenterCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIControlCenterCircleButton.h; sourceTree = "<group>"; };
 		84EECF75176E5C4B00AA826F /* CFIControlCenterCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIControlCenterCircleButton.m; sourceTree = "<group>"; };
 		84EECF78176E6E8200AA826F /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = External/GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
-		84EECF88176E6FAA00AA826F /* CFIFrostedOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIFrostedOverlayView.h; sourceTree = SOURCE_ROOT; };
-		84EECF89176E6FAA00AA826F /* CFIFrostedOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIFrostedOverlayView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +171,6 @@
 				8442BD0D176E3EEB00F27E4D /* EXTScope.h */,
 				8442BD0E176E3EEB00F27E4D /* EXTScope.m */,
 				8442BD10176E3EF400F27E4D /* metamacros.h */,
-				8442BD0B176E3A7200F27E4D /* Wallpaper.png */,
 				8442BCC3176E375A00F27E4D /* Supporting Files */,
 			);
 			path = CFIFrostedOverlayView;
@@ -178,6 +183,10 @@
 				8442BCC5176E375A00F27E4D /* InfoPlist.strings */,
 				8442BCC8176E375A00F27E4D /* main.m */,
 				8442BCCA176E375A00F27E4D /* CFIFrostedOverlayView-Prefix.pch */,
+				84E606D21793349F00194C76 /* Wallpaper.png */,
+				84E606DA179335B600194C76 /* Default-568h@2x.png */,
+				84E606DB179335B600194C76 /* Default.png */,
+				84E606DC179335B600194C76 /* Default@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -212,8 +221,8 @@
 		84EECF8B176E6FAF00AA826F /* Control */ = {
 			isa = PBXGroup;
 			children = (
-				84EECF88176E6FAA00AA826F /* CFIFrostedOverlayView.h */,
-				84EECF89176E6FAA00AA826F /* CFIFrostedOverlayView.m */,
+				84E606BA17931BB500194C76 /* CFIFrostedOverlayView.h */,
+				84E606BB17931BB500194C76 /* CFIFrostedOverlayView.m */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -319,8 +328,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E606D31793349F00194C76 /* Wallpaper.png in Resources */,
 				8442BCC7176E375A00F27E4D /* InfoPlist.strings in Resources */,
-				8442BD0C176E3A7200F27E4D /* Wallpaper.png in Resources */,
+				84E606DF179335B600194C76 /* Default@2x.png in Resources */,
+				84E606DD179335B600194C76 /* Default-568h@2x.png in Resources */,
+				84E606DE179335B600194C76 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84EECF8A176E6FAA00AA826F /* CFIFrostedOverlayView.m in Sources */,
+				84E606BC17931BB500194C76 /* CFIFrostedOverlayView.m in Sources */,
 				8442BD0F176E3EEB00F27E4D /* EXTScope.m in Sources */,
 				84EECF65176E4E5E00AA826F /* CFIControlCenterView.m in Sources */,
 				84EECF76176E5C4B00AA826F /* CFIControlCenterCircleButton.m in Sources */,
